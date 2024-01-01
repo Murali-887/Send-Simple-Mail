@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Simple Mail</title>
+    <style>
+      * {
+        background-color: rgb(53, 53, 53);
+      }
+
+      table tr td {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      table {
+        border-collapse: separate;
+        border-spacing: 0 24px;
+      }
+
+      input,
+      label,
+      textarea {
+        color: white;
+        font-size: 16px;
+        background-color: rgb(54, 53, 53);
+        outline: 0;
+        padding: 10px;
+      }
+      input:focus,
+      label:focus,
+      textarea:focus {
+        border: 2px solid rgba(122, 121, 121, 0.695);
+      }
+      input[type="submit"] {
+        margin-top: 44%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://localhost:2424/">
+      <table>
+        <!-- <tr>
+          <td><label for="userMail">From: </label></td>
+          <td><input type="email" name="userMail" id="userMail" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password: </label></td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr> -->
+          <tr>
+          <td><label for="name">Name: </label></td>
+          <td><input type="text" name="name" id="name" /> <br /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email: </label></td>
+          <td><input type="email" name="email" id="email" /> <br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="subject">Subject</label>
+          </td>
+          <td><input type="text" name="subject" id="subject" /></td>
+        </tr>
+        <tr>
+          <td><label for="message">Message: </label></td>
+          <td>
+            <textarea name="message" id="message" cols="24" rows="5">
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Submit" /></td>
+        </tr>
+      </table>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
